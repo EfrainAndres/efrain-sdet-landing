@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Efrain SDET Landing
 
-## Getting Started
+Professional personal landing page for Efrain Vergara, a Senior Mobile SDET / QA Automation Engineer.
 
-First, run the development server:
+## Purpose
+
+This site presents Efrain's quality engineering profile for international recruiters and clients. It is intended to highlight Senior Mobile SDET experience, mobile automation, CI/CD failure analysis, release readiness, API/UI validation, and AI-assisted QA workflows in a clean, fast, accessible landing page.
+
+English is the default experience at `/`. The Spanish version is available at `/es`.
+
+## Tech Stack
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- `src/` directory
+- `@/*` import alias
+- ESLint
+- Turbopack for local development
+
+## Project Structure
+
+```text
+.
+|-- AGENTS.md
+|-- CHANGELOG.md
+|-- README.md
+|-- public/
+|-- src/
+|   `-- app/
+|       |-- globals.css
+|       |-- layout.tsx
+|       `-- page.tsx
+|-- package.json
+|-- next.config.ts
+`-- tsconfig.json
+```
+
+Future reusable UI should live under `src/components`. Shared content or profile data should live under `src/data` when practical.
+
+## Local Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the local development server with Turbopack:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Run lint checks:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+```
 
-## Learn More
+## Build
 
-To learn more about Next.js, take a look at the following resources:
+Create a production build:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Start the production server locally:
 
-## Deploy on Vercel
+```bash
+npm run start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Git Workflow
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Do not work directly on `main` for implementation changes.
+- Start task branches from the latest `origin/main`.
+- Use focused branch names such as `docs/*`, `feat/*`, `fix/*`, `style/*`, or `chore/*`.
+- Keep branches small and easy to review.
+- Use Conventional Commit messages.
+- Run validation before committing when possible.
+- Push the task branch to `origin` after validation when a remote is configured.
+- Prefer Pull Requests for merging into `main`.
+- Keep `main` stable and deployable.
+
+## Deployment
+
+This project is intended for deployment on Vercel.
+
+Recommended setup:
+
+- Import the GitHub repository into Vercel.
+- Use the default Next.js framework settings.
+- Build command: `npm run build`.
+- Development command: `npm run dev`.
+- Do not commit secrets, tokens, `.env` files, or sensitive personal data.
+- Configure any future environment variables in Vercel project settings instead of source control.
+
+## Author
+
+Efrain Vergara
+
+Senior Mobile SDET / QA Automation Engineer
