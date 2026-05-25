@@ -14,3 +14,4 @@ This project uses a simple Keep a Changelog-inspired format.
 - Technical improvement backlog added in `docs/TECHNICAL_BACKLOG.md`.
 - GitHub Actions CI validation added for pull requests and `main` pushes.
 - Initial bilingual professional landing page added at `/` and `/es`.
+- Next.js build configuration adjusted to use the SWC WASM fallback on local macOS arm64 environments.
