@@ -39,7 +39,7 @@ This backlog captures future improvements and considerations for the Efrain SDET
 
 ## CI and Quality Gates
 
-- Add GitHub Actions with `npm ci`, `npm run lint`, and `npm run build`.
+- Keep GitHub Actions validation running `npm ci`, `npm run lint`, and `npm run build`.
 - Require CI to pass before merging PRs into `main`.
 - Consider typecheck or smoke tests later only if needed.
 
