@@ -74,6 +74,12 @@ Start the production server locally:
 npm run start
 ```
 
+## CI
+
+GitHub Actions runs validation for pull requests targeting `main` and pushes to `main`.
+
+The CI workflow installs dependencies with `npm ci`, runs `npm run lint` when available, and runs `npm run build`. Pull Requests should not be merged into `main` unless CI passes.
+
 ## Git Workflow
 
 - Do not work directly on `main` for implementation changes.

@@ -79,5 +79,6 @@ This repository is a professional personal landing page for Efrain Vergara, a Se
 - Prefer Pull Requests to merge changes into `main`.
 - Keep `main` stable and deployable.
 - GitHub Actions must pass before merging Pull Requests into `main` once CI is configured.
+- Do not merge Pull Requests into `main` when CI is failing.
 - Do not commit secrets, tokens, `.env` files, local environment files, or sensitive personal data.
 - If unsure whether a file should be committed, ask before committing.
