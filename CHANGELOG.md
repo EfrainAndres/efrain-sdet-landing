@@ -17,3 +17,4 @@ This project uses a simple Keep a Changelog-inspired format.
 - Next.js build configuration adjusted to use the SWC WASM fallback on local macOS arm64 environments.
 - Bento landing design polished with stronger contrast, improved responsive spacing, clearer CTAs, and accessibility refinements.
 - Landing page copy and SEO metadata improved for recruiter and client discovery.
+- Resume PDF and public contact links added to the landing page CTAs.
