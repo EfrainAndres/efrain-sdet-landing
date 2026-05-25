@@ -20,3 +20,4 @@ This project uses a simple Keep a Changelog-inspired format.
 - Resume PDF and public contact links added to the landing page CTAs.
 - Production URL added to metadata and deployment documentation.
 - Final bilingual copy, footer text, CTA labels, and mobile hero spacing polished.
+- Desktop Bento card alignment and QA Signal spacing polished.

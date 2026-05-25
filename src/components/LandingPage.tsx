@@ -26,8 +26,8 @@ export function LandingPage({ content }: LandingPageProps) {
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-4 sm:gap-5 sm:px-5 sm:py-6 lg:gap-6 lg:py-8">
           <Hero content={content} />
 
-          <div className="grid gap-4 lg:grid-cols-[0.86fr_1.14fr]">
-            <BentoCard className="flex flex-col justify-between gap-6">
+          <div className="grid items-start gap-4 lg:grid-cols-[0.86fr_1.14fr]">
+            <BentoCard className="flex flex-col gap-4">
               <h2 className="text-sm font-semibold uppercase text-cyan-800">
                 {content.about.title}
               </h2>
