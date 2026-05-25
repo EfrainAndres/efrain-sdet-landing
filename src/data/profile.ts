@@ -13,6 +13,7 @@ export type ContactLink = {
 
 export type ProfileContent = {
   locale: Locale;
+  skipLinkLabel: string;
   languageLabel: string;
   languageHref: string;
   hero: {
@@ -33,6 +34,7 @@ export type ProfileContent = {
   };
   skills: {
     title: string;
+    subtitle: string;
     groups: SkillGroup[];
   };
   project: {
@@ -80,6 +82,7 @@ const contactLinks: ContactLink[] = [
 export const profileContent: Record<Locale, ProfileContent> = {
   en: {
     locale: "en",
+    skipLinkLabel: "Skip to main content",
     languageLabel: "ES",
     languageHref: "/es",
     hero: {
@@ -109,6 +112,7 @@ export const profileContent: Record<Locale, ProfileContent> = {
     },
     skills: {
       title: "Key Skills",
+      subtitle: "Mobile, web, API, delivery, and AI-assisted QA",
       groups: [
         {
           title: "Mobile Automation",
@@ -149,6 +153,7 @@ export const profileContent: Record<Locale, ProfileContent> = {
   },
   es: {
     locale: "es",
+    skipLinkLabel: "Saltar al contenido principal",
     languageLabel: "EN",
     languageHref: "/",
     hero: {
@@ -178,6 +183,7 @@ export const profileContent: Record<Locale, ProfileContent> = {
     },
     skills: {
       title: "Habilidades clave",
+      subtitle: "Mobile, web, API, delivery y QA asistido con IA",
       groups: [
         {
           title: "Automatización Mobile",

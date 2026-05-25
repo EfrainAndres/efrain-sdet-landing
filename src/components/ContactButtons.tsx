@@ -6,15 +6,15 @@ type ContactButtonsProps = {
 
 export function ContactButtons({ links }: ContactButtonsProps) {
   return (
-    <div className="flex flex-wrap gap-3">
+    <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
       {links.map((link) => (
         <a
           key={link.label}
           href={link.href}
-          className={`inline-flex min-h-11 items-center justify-center rounded-full px-5 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 ${
+          className={`inline-flex min-h-12 items-center justify-center rounded-full px-5 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-cyan-300 sm:min-h-11 ${
             link.variant === "primary"
-              ? "bg-slate-950 text-white hover:bg-slate-800"
-              : "border border-slate-300 bg-white text-slate-900 hover:border-sky-300 hover:text-sky-800"
+              ? "bg-cyan-300 text-slate-950 hover:bg-cyan-200"
+              : "border border-slate-300 bg-white text-slate-900 hover:border-cyan-400 hover:text-slate-950"
           }`}
           aria-label={link.label}
         >
