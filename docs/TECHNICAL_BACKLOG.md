@@ -5,14 +5,14 @@ This backlog captures future improvements and considerations for the Efrain SDET
 ## Architecture and Structure
 
 - Keep the app simple and static.
-- Centralize profile content in `src/data/profile.ts`.
+- Keep profile content centralized in `src/data/profile.ts`.
 - Keep reusable UI under `src/components`.
 - Avoid large `page.tsx` files.
 - Avoid unnecessary dependencies.
 
 ## Content Maintainability
 
-- Store bilingual copy, links, skills, CTAs, highlights, and project data in a centralized data file.
+- Keep bilingual copy, links, skills, CTAs, highlights, and project data in a centralized data file.
 - Avoid duplicating content between `/` and `/es` when possible.
 
 ## SEO and Metadata
