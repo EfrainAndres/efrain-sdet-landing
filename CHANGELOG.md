@@ -19,3 +19,4 @@ This project uses a simple Keep a Changelog-inspired format.
 - Landing page copy and SEO metadata improved for recruiter and client discovery.
 - Resume PDF and public contact links added to the landing page CTAs.
 - Production URL added to metadata and deployment documentation.
+- Final bilingual copy, footer text, CTA labels, and mobile hero spacing polished.

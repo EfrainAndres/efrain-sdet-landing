@@ -9,8 +9,8 @@ type HeroProps = {
 export function Hero({ content }: HeroProps) {
   return (
     <section className="grid gap-4 lg:grid-cols-[1.22fr_0.78fr]">
-      <div className="rounded-lg border border-white/10 bg-slate-950 p-6 text-white shadow-sm shadow-slate-950/20 sm:p-8 lg:p-10">
-        <div className="mb-9 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="rounded-lg border border-white/10 bg-slate-950 p-5 text-white shadow-sm shadow-slate-950/20 sm:p-8 lg:p-10">
+        <div className="mb-7 flex flex-col gap-4 sm:mb-9 sm:flex-row sm:items-center sm:justify-between">
           <p className="max-w-md text-sm font-semibold uppercase text-cyan-200">
             {content.hero.eyebrow}
           </p>
@@ -23,7 +23,7 @@ export function Hero({ content }: HeroProps) {
           </Link>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-5 sm:space-y-6">
           <div>
             <h1 className="text-4xl font-bold leading-tight text-white sm:text-6xl">
               {content.hero.name}

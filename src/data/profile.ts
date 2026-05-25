@@ -53,32 +53,69 @@ export type ProfileContent = {
     links: ContactLink[];
   };
   footer: string;
+  footerSignature: string;
 };
 
-const contactLinks: ContactLink[] = [
+const sharedContactLinks = {
+  linkedin: "https://www.linkedin.com/in/efrain-vergara",
+  resume: "/Efrain_Vergara_Senior_Mobile_SDET_Resume.pdf",
+  github: "https://github.com/EfrainAndres",
+  email: "mailto:efrainvergara.udec@gmail.com",
+  schedule: "#schedule",
+};
+
+const englishContactLinks: ContactLink[] = [
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/efrain-vergara",
+    href: sharedContactLinks.linkedin,
     variant: "primary",
   },
   {
     label: "Resume PDF",
-    href: "/Efrain_Vergara_Senior_Mobile_SDET_Resume.pdf",
+    href: sharedContactLinks.resume,
     variant: "secondary",
   },
   {
     label: "GitHub",
-    href: "https://github.com/EfrainAndres",
+    href: sharedContactLinks.github,
     variant: "secondary",
   },
   {
     label: "Email",
-    href: "mailto:efrainvergara.udec@gmail.com",
+    href: sharedContactLinks.email,
     variant: "secondary",
   },
   {
     label: "Schedule a call (coming soon)",
-    href: "#schedule",
+    href: sharedContactLinks.schedule,
+    variant: "secondary",
+  },
+];
+
+const spanishContactLinks: ContactLink[] = [
+  {
+    label: "LinkedIn",
+    href: sharedContactLinks.linkedin,
+    variant: "primary",
+  },
+  {
+    label: "CV PDF",
+    href: sharedContactLinks.resume,
+    variant: "secondary",
+  },
+  {
+    label: "GitHub",
+    href: sharedContactLinks.github,
+    variant: "secondary",
+  },
+  {
+    label: "Email",
+    href: sharedContactLinks.email,
+    variant: "secondary",
+  },
+  {
+    label: "Schedule a call (coming soon)",
+    href: sharedContactLinks.schedule,
     variant: "secondary",
   },
 ];
@@ -154,12 +191,13 @@ export const profileContent: Record<Locale, ProfileContent> = {
       ],
     },
     contact: {
-      title: "Need stronger mobile release confidence?",
+      title: "Open to senior mobile SDET opportunities",
       description:
         "Open to international recruiter, client, and team conversations around senior mobile QA automation, release readiness, and practical SDET leadership.",
-      links: contactLinks,
+      links: englishContactLinks,
     },
-    footer: "Built as a lightweight bilingual landing page.",
+    footer: "Built with Next.js, TypeScript and Tailwind CSS.",
+    footerSignature: "Efrain Vergara · Senior Mobile SDET",
   },
   es: {
     locale: "es",
@@ -176,7 +214,7 @@ export const profileContent: Record<Locale, ProfileContent> = {
       name: "Efrain Vergara",
       role: "Senior Mobile SDET / QA Automation Engineer",
       headline:
-        "Automatización QA mobile para convertir fallas de CI en decisiones listas para release.",
+        "Automatización QA mobile para transformar fallas de CI en decisiones claras de release.",
       summary:
         "Siete años de experiencia ayudando a equipos de producto a fortalecer automatización mobile, validar comportamiento API/UI, analizar fallas de pipeline y aplicar flujos QA asistidos con IA de forma práctica.",
       tags: ["Automatización mobile", "Análisis CI/CD", "Release readiness"],
@@ -199,7 +237,7 @@ export const profileContent: Record<Locale, ProfileContent> = {
     },
     skills: {
       title: "Habilidades clave",
-      subtitle: "Habilidades enfocadas en automatización mobile, validación, delivery y QA asistido con IA",
+      subtitle: "Habilidades enfocadas en automatización mobile, validación, delivery y QA asistido por IA",
       groups: [
         {
           title: "Automatización Mobile",
@@ -214,7 +252,7 @@ export const profileContent: Record<Locale, ProfileContent> = {
           items: ["Jenkins", "AWS Device Farm", "Jira", "TestRail"],
         },
         {
-          title: "QA asistido con IA",
+          title: "QA asistido por IA",
           items: ["GitHub Copilot", "ChatGPT", "Codex"],
         },
       ],
@@ -231,11 +269,12 @@ export const profileContent: Record<Locale, ProfileContent> = {
       ],
     },
     contact: {
-      title: "¿Necesitas más confianza en releases mobile?",
+      title: "Disponible para oportunidades Senior Mobile SDET",
       description:
-        "Disponible para conversaciones con reclutadores internacionales, clientes y equipos que buscan apoyo senior en automatización QA mobile, release readiness y liderazgo SDET práctico.",
-      links: contactLinks,
+        "Abierto a conversaciones con reclutadores internacionales, clientes y equipos que busquen apoyo senior en automatización QA mobile, release readiness y liderazgo SDET práctico.",
+      links: spanishContactLinks,
     },
-    footer: "Construido como una landing bilingüe, ligera y mantenible.",
+    footer: "Construido con Next.js, TypeScript y Tailwind CSS.",
+    footerSignature: "Efrain Vergara · Senior Mobile SDET",
   },
 };
