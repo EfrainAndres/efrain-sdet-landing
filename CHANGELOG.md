@@ -11,3 +11,4 @@ This project uses a simple Keep a Changelog-inspired format.
 - Initial Next.js landing project setup.
 - Project guidelines added in `AGENTS.md`.
 - Branch-based Git workflow documented.
+- Technical improvement backlog added in `docs/TECHNICAL_BACKLOG.md`.

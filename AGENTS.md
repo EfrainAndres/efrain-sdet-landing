@@ -57,6 +57,9 @@ This repository is a professional personal landing page for Efrain Vergara, a Se
 ## Documentation and Release Notes
 
 - Update `CHANGELOG.md` for visible user-facing changes, deployment changes, SEO changes, CI changes, accessibility improvements, and documentation releases.
+- Review `docs/TECHNICAL_BACKLOG.md` before architecture, CI, SEO, accessibility, or structural changes.
+- Update `docs/TECHNICAL_BACKLOG.md` when new future improvements are identified.
+- Do not treat backlog items as implemented unless the code or documentation actually includes them.
 - Keep documentation concise, professional, and accurate.
 - Do not publish private contact details, secrets, tokens, `.env` files, or sensitive personal data.
 
