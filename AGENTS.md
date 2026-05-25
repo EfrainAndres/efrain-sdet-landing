@@ -52,13 +52,18 @@ This repository is a professional personal landing page for Efrain Vergara, a Se
 - Keep accessibility in mind: readable contrast, keyboard-friendly links/buttons, meaningful labels, and proper heading hierarchy.
 - Keep changes small and easy to review.
 - Run `npm run lint` and `npm run build` when possible.
-- Update `CHANGELOG.md` for visible user-facing changes.
 - Explain files changed after each task.
+
+## Documentation and Release Notes
+
+- Update `CHANGELOG.md` for visible user-facing changes, deployment changes, SEO changes, CI changes, accessibility improvements, and documentation releases.
+- Keep documentation concise, professional, and accurate.
+- Do not publish private contact details, secrets, tokens, `.env` files, or sensitive personal data.
 
 ## Git Workflow
 
 - Never work directly on `main` for implementation changes.
-- For every meaningful change, create a dedicated branch from `main`.
+- Every meaningful task should use a dedicated branch from `main`.
 - Use clear branch names:
   - `feat/*` for new sections or functionality.
   - `fix/*` for corrections.
@@ -67,8 +72,9 @@ This repository is a professional personal landing page for Efrain Vergara, a Se
   - `chore/*` for configuration, metadata, links, deployment, or maintenance.
 - Keep branches small and focused.
 - Use clear Conventional Commit messages.
-- Push the branch to `origin` after the task is complete and validated, unless explicitly told not to push.
+- Push the branch to `origin` after the task is complete and validated when a remote is configured, unless explicitly told not to push.
 - Prefer Pull Requests to merge changes into `main`.
 - Keep `main` stable and deployable.
-- Do not commit secrets, private tokens, local environment files, or sensitive personal data.
+- GitHub Actions must pass before merging Pull Requests into `main` once CI is configured.
+- Do not commit secrets, tokens, `.env` files, local environment files, or sensitive personal data.
 - If unsure whether a file should be committed, ask before committing.
