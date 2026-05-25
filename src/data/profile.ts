@@ -58,26 +58,26 @@ export type ProfileContent = {
 const contactLinks: ContactLink[] = [
   {
     label: "LinkedIn",
-    href: "#linkedin",
+    href: "https://www.linkedin.com/in/efrain-vergara",
     variant: "primary",
   },
   {
     label: "Resume PDF",
-    href: "#resume",
+    href: "/Efrain_Vergara_Senior_Mobile_SDET_Resume.pdf",
     variant: "secondary",
   },
   {
     label: "GitHub",
-    href: "#github",
+    href: "https://github.com/EfrainAndres",
     variant: "secondary",
   },
   {
     label: "Email",
-    href: "#email",
+    href: "mailto:efrainvergara.udec@gmail.com",
     variant: "secondary",
   },
   {
-    label: "Schedule a call",
+    label: "Schedule a call (coming soon)",
     href: "#schedule",
     variant: "secondary",
   },
