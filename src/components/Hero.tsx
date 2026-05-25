@@ -8,64 +8,67 @@ type HeroProps = {
 
 export function Hero({ content }: HeroProps) {
   return (
-    <section className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-      <div className="rounded-lg border border-slate-200 bg-white p-7 shadow-sm shadow-slate-200/80 sm:p-9">
-        <div className="mb-8 flex items-center justify-between gap-4">
-          <p className="text-xs font-semibold uppercase text-sky-700">
+    <section className="grid gap-4 lg:grid-cols-[1.22fr_0.78fr]">
+      <div className="rounded-lg border border-white/10 bg-slate-950 p-6 text-white shadow-sm shadow-slate-950/20 sm:p-8 lg:p-10">
+        <div className="mb-9 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <p className="max-w-md text-sm font-semibold uppercase text-cyan-200">
             {content.hero.eyebrow}
           </p>
           <Link
             href={content.languageHref}
-            className="rounded-full border border-slate-300 px-3 py-1.5 text-sm font-semibold text-slate-800 transition hover:border-sky-400 hover:text-sky-800 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+            className="inline-flex min-h-10 w-fit items-center rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-200 hover:text-cyan-100 focus:outline-none focus:ring-2 focus:ring-cyan-300"
             aria-label={`Switch language to ${content.languageLabel}`}
           >
             {content.languageLabel}
           </Link>
         </div>
 
-        <div className="space-y-5">
+        <div className="space-y-6">
           <div>
-            <h1 className="text-4xl font-bold leading-tight text-slate-950 sm:text-6xl">
+            <h1 className="text-4xl font-bold leading-tight text-white sm:text-6xl">
               {content.hero.name}
             </h1>
-            <p className="mt-3 text-lg font-semibold text-sky-800 sm:text-xl">
+            <p className="mt-4 text-lg font-semibold text-cyan-200 sm:text-xl">
               {content.hero.role}
             </p>
           </div>
-          <p className="max-w-3xl text-2xl font-semibold leading-snug text-slate-900 sm:text-3xl">
+          <p className="max-w-3xl text-2xl font-semibold leading-snug text-slate-100 sm:text-3xl">
             {content.hero.headline}
           </p>
-          <p className="max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
+          <p className="max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
             {content.hero.summary}
           </p>
           <ContactButtons links={content.contact.links.slice(0, 2)} />
         </div>
       </div>
 
-      <aside className="rounded-lg border border-slate-900 bg-slate-950 p-6 text-white shadow-sm shadow-slate-300">
-        <div className="flex h-full min-h-[340px] flex-col justify-between gap-8">
-          <div className="flex items-start justify-between gap-4">
+      <aside
+        className="rounded-lg border border-slate-200 bg-white p-6 text-slate-950 shadow-sm shadow-slate-950/[0.04]"
+        aria-label="Quality engineering focus areas"
+      >
+        <div className="flex h-full min-h-[320px] flex-col justify-between gap-8">
+          <div className="flex items-start justify-between gap-5">
             <div
-              className="flex size-20 items-center justify-center rounded-lg bg-sky-400 text-2xl font-black text-slate-950"
+              className="flex size-20 items-center justify-center rounded-lg bg-cyan-300 text-2xl font-black text-slate-950"
               aria-hidden="true"
             >
               EV
             </div>
-            <div className="rounded-full border border-white/15 px-3 py-1 text-xs font-semibold uppercase text-sky-100">
+            <div className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold uppercase text-slate-700">
               QA Signal
             </div>
           </div>
 
-          <div className="divide-y divide-white/15">
+          <div className="divide-y divide-slate-200">
             {content.hero.tags.map((tag, index) => (
               <div key={tag} className="py-4 first:pt-0 last:pb-0">
                 <div className="mb-3 flex items-center justify-between gap-4">
-                  <span className="text-sm font-semibold text-sky-100">
+                  <span className="text-sm font-semibold text-cyan-700">
                     0{index + 1}
                   </span>
-                  <span className="h-2 w-2 rounded-full bg-emerald-300" />
+                  <span className="h-px w-10 bg-slate-300" aria-hidden="true" />
                 </div>
-                <p className="text-lg font-semibold">{tag}</p>
+                <p className="text-lg font-semibold text-slate-950">{tag}</p>
               </div>
             ))}
           </div>
