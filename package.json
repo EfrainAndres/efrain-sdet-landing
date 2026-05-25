@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "PATH=/usr/local/bin:$PATH NEXT_TEST_WASM_DIR=node_modules/@next/swc-wasm-nodejs node ./node_modules/next/dist/bin/next build --experimental-next-config-strip-types --webpack",
     "start": "next start",
     "lint": "eslint"
   },
@@ -14,6 +14,7 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@next/swc-wasm-nodejs": "16.2.6",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

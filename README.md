@@ -27,10 +27,14 @@ English is the default experience at `/`. The Spanish version is available at `/
 |-- README.md
 |-- public/
 |-- src/
-|   `-- app/
-|       |-- globals.css
-|       |-- layout.tsx
-|       `-- page.tsx
+|   |-- app/
+|   |   |-- es/
+|   |   |   `-- page.tsx
+|   |   |-- globals.css
+|   |   |-- layout.tsx
+|   |   `-- page.tsx
+|   |-- components/
+|   `-- data/
 |-- package.json
 |-- next.config.ts
 `-- tsconfig.json
