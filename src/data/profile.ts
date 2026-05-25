@@ -233,7 +233,7 @@ export const profileContent: Record<Locale, ProfileContent> = {
     contact: {
       title: "¿Necesitas más confianza en releases mobile?",
       description:
-        "Disponible para conversaciones con recruiters internacionales, clientes y equipos que buscan apoyo senior en automatización QA mobile, release readiness y liderazgo SDET práctico.",
+        "Disponible para conversaciones con reclutadores internacionales, clientes y equipos que buscan apoyo senior en automatización QA mobile, release readiness y liderazgo SDET práctico.",
       links: contactLinks,
     },
     footer: "Construido como una landing bilingüe, ligera y mantenible.",

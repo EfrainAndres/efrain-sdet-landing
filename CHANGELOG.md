@@ -18,3 +18,4 @@ This project uses a simple Keep a Changelog-inspired format.
 - Bento landing design polished with stronger contrast, improved responsive spacing, clearer CTAs, and accessibility refinements.
 - Landing page copy and SEO metadata improved for recruiter and client discovery.
 - Resume PDF and public contact links added to the landing page CTAs.
+- Production URL added to metadata and deployment documentation.

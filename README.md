@@ -98,7 +98,9 @@ The CI workflow installs dependencies with `npm ci`, runs `npm run lint` when av
 
 ## Deployment
 
-This project is intended for deployment on Vercel.
+This project is deployed on Vercel:
+
+- Production URL: [https://efrain-sdet-landing.vercel.app/](https://efrain-sdet-landing.vercel.app/)
 
 Recommended setup:
 
